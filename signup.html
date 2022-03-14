@@ -71,85 +71,48 @@
 
   <main class="box">
 
-    <div class="container create-product">
-      <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12 edit_information">
-        <form action="" method="POST">
-          <h3 class="text-center">Create a new Property</h3>
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div class="form-group">
-                <label class="profile_details_text">Name:</label>
-                <input type="text" name="property-name" class="form-control" value="" required>
-              </div>
+<div class="container signup-container" id="">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+            
+                <input class="" type="text" placeholder="Name" />
+                <input class="" type="email" placeholder="Email" />
+                <input class="" type="text" placeholder="Secret key" />
+                <input class="" type="password" placeholder="Password" />
+                <input class="" type="password" placeholder="Password confirm" />
+                <button class="btn btn-dark">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign in</h1>
+             
+                <span>or use your account</span>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <a class="link-color" href="#">Forgot your password?</a>
+                <button class="btn btn-dark">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="btn btn-dark" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class=" btn btn-dark" id="signUp">Sign Up</button>
+                </div>
             </div>
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div class="form-group">
-                <label class="profile_details_text">Description: </label>
-                <input type="text" name="Property-description" class="form-control" value="" required>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-
-
-
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div class="form-group">
-                <label class="profile_details_text">Cover Image:</label>
-                <input id="cover-image-upload" class="hidden" type="file" onchange="">
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div class="form-group">
-                <label class="profile_details_text">Images:</label>
-                <input id="images-upload" class="hidden" type="file" onchange="" multiple>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div class="form-group">
-                <label class="profile_details_text">Location:</label>
-                <input type="text" name="location" class="form-control" value="" required>
-              </div>
-            </div>
-          </div>
-
-          <div class="row type-div">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div class="form-group">
-                <label class="profile_details_text">Type:</label>
-                <select class="form-select form-select-sm select-type" aria-label=".form-select-sm example"
-                  onchange="showOtherForm()">
-                  <option selected>Open this select menu</option>
-                  <option value="house">house</option>
-                  <option value="land">land</option>
-                </select> </div>
-            </div>
-          </div>
-
-          <div class="other"></div>
-
-
-         
-          <!--  -->
-        
-
-          <!--  -->
-
-
-
-      </form>
+        </div>
     </div>
-    </div>
+
+
+
   </main>
 
   <!-- footer -->

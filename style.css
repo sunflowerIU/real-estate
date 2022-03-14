@@ -2,158 +2,188 @@
 
 /* product card  and bg*/
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
+html,
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
-body{
-    line-height: 1.5;
+
+body {
+  line-height: 1.5;
+  box-sizing: inherit;
+  min-height: 100vh;
 }
-.bg{
-    z-index: -99;
-    height: 500px;
-    width: 100%;
-    background-position:center;
-    background-size: cover;
-    background-image: url(images/bg-1.jpg);
-  
-  }
-.card-wrapper{
-    max-width: 1100px;
-    margin: 0 auto;
+
+.bg {
+  z-index: -99;
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(images/bg-1.jpg);
+
 }
-img{
-    width: 100%;
-    height: 100%;
-    display: block;
+
+.card-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
 }
-.img-display{
-    overflow: hidden;
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
-.img-showcase{
-    display: flex;
-    width: 100%;
-    transition: all 0.5s ease;
+
+.img-display {
+  overflow: hidden;
 }
-.img-showcase img{
-    min-width: 100%;
+
+.img-showcase {
+  display: flex;
+  width: 100%;
+  transition: all 0.5s ease;
 }
-.img-select{
-    display: flex;
+
+.img-showcase img {
+  min-width: 100%;
 }
-.img-item{
-    margin: 0.3rem;
+
+.img-select {
+  display: flex;
 }
+
+.img-item {
+  margin: 0.3rem;
+}
+
 .img-item:nth-child(1),
 .img-item:nth-child(2),
-.img-item:nth-child(3){
-    margin-right: 0;
-}
-.img-item:hover{
-    opacity: 0.8;
-}
-.product-content{
-    padding: 2rem 1rem;
-}
-.product-title{
-    font-size: 3rem;
-    text-transform: capitalize;
-    font-weight: 700;
-    position: relative;
-    color: #12263a;
-    margin: 1rem 0;
-}
-.product-title::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 4px;
-    width: 80px;
-    background: #12263a;
+.img-item:nth-child(3) {
+  margin-right: 0;
 }
 
-
-.product-detail h2{
-    text-transform: capitalize;
-    color: #12263a;
-    padding-bottom: 0.6rem;
-}
-.product-detail p{
-    font-size: 0.9rem;
-    padding: 0.3rem;
-    opacity: 0.8;
-}
-.product-detail ul{
-    margin: 1rem 0;
-    font-size: 0.9rem;
-}
-.product-detail ul li{
-    margin: 0;
-    list-style: none;
-    background-size: 18px;
-    padding-left: 1.7rem;
-    margin: 0.4rem 0;
-    font-weight: 600;
-    opacity: 0.9;
-}
-.product-detail ul li span{
-    font-weight: 400;
+.img-item:hover {
+  opacity: 0.8;
 }
 
-.social-links{
-    display: flex;
-    align-items: center;
-}
-.social-links a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    color: #000;
-    border: 1px solid #000;
-    margin: 0 0.2rem;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 0.8rem;
-    transition: all 0.5s ease;
-}
-.social-links a:hover{
-    background: #000;
-    border-color: transparent;
-    color: #fff;
+.product-content {
+  padding: 2rem 1rem;
 }
 
-@media screen and (min-width: 992px){
-    .card-product{
-        margin-top: 60px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1.5rem;
-    }
-    .card-wrapper{
-        height: fit-content;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .product-imgs{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .product-content{
-        padding-top: 0;
-    }
+.product-title {
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  position: relative;
+  color: #12263a;
+  margin: 1rem 0;
 }
 
-
-footer{
-  bottom: 0;
+.product-title::after {
+  content: "";
+  position: absolute;
   left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 80px;
+  background: #12263a;
+}
+
+
+.product-detail h2 {
+  text-transform: capitalize;
+  color: #12263a;
+  padding-bottom: 0.6rem;
+}
+
+.product-detail p {
+  font-size: 0.9rem;
+  padding: 0.3rem;
+  opacity: 0.8;
+}
+
+.product-detail ul {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.product-detail ul li {
+  margin: 0;
+  list-style: none;
+  background-size: 18px;
+  padding-left: 1.7rem;
+  margin: 0.4rem 0;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.product-detail ul li span {
+  font-weight: 400;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: #000;
+  border: 1px solid #000;
+  margin: 0 0.2rem;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: all 0.5s ease;
+}
+
+.social-links a:hover {
+  background: #000;
+  border-color: transparent;
+  color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+  .card-product {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+  }
+
+  .card-wrapper {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .product-content {
+    padding-top: 0;
+  }
+}
+
+
+footer {
+  position: sticky;
+  top: 100%;
+  /* bottom: 0;
+  right: 0;
+  left: 0; */
+
 }
 
 /* contact */
@@ -168,6 +198,7 @@ textarea {
 }
 
 .container-form {
+  margin-top: 20px;
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -289,22 +320,22 @@ textarea.input {
 }
 
 .btn-contact {
-    padding: 0.6rem 1.3rem;
-    background-color: #fff;
-    border: 2px solid #fafafa;
-    font-size: 0.95rem;
-    color: #1abc9c;
-    line-height: 1;
-    border-radius: 25px;
-    outline: none;
-    cursor: pointer;
-    transition: 0.3s;
-    margin: 0;
+  padding: 0.6rem 1.3rem;
+  background-color: #fff;
+  border: 2px solid #fafafa;
+  font-size: 0.95rem;
+  color: #1abc9c;
+  line-height: 1;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0;
 }
 
 .btn-contact:hover {
-    background-color: transparent;
-    color: #fff;
+  background-color: transparent;
+  color: #fff;
 }
 
 .input-container span {
@@ -545,26 +576,226 @@ textarea.input {
 
 /* user profile */
 
-.profile-pic{
-    position: relative;
-    height:200px;
-    width:200px;
-    /* left: 50%; */
-    transform: translateX(-50%);
-    top: 0px;
-    z-index: 1001;
-    padding: 20px;
-    margin: 60px auto;
+.profile-pic {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  /* left: 50%; */
+  transform: translateX(-50%);
+  top: 0px;
+  z-index: 1001;
+  padding: 20px;
+  margin: 60px auto;
 }
-.profile-pic img{
-   
-    border-radius: 50%;
-    box-shadow: 0px 0px 5px 0px #c1c1c1;
-    cursor: pointer;
-    width: 200px;
-    height: 200px;
-}   
 
-.create-product{
+.profile-pic img {
+
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 0px #c1c1c1;
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+}
+
+.create-product {
   margin-top: 40px;
+}
+
+
+
+
+
+
+/* signup form */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+  box-sizing: border-box;
+}
+
+
+.link-color {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+.signup-container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+  margin-top: 70px;
+}
+
+.form-container form {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.social-container {
+  margin: 20px 0;
+}
+
+.social-container a {
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+}
+
+.form-container input {
+  background: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+
+
+button:active {
+  transform: scale(.95);
+}
+
+button:focus {
+  outline: none;
+}
+
+
+
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all .6s ease-in-out;
+}
+
+.sign-in-container {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.sign-up-container {
+  left: 0;
+  width: 50%;
+  z-index: 1;
+  opacity: 0;
+}
+
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform .6s ease-in-out;
+  z-index: 100;
+}
+
+.overlay {
+  background: #ff416c;
+  background: #2570e0 no-repeat 0 0 / cover;
+  color: #fff;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateY(0);
+  transition: transform .6s ease-in-out;
+}
+
+.overlay-panel {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform .6s ease-in-out;
+}
+
+.overlay-right {
+  right: 0;
+  transform: translateY(0);
+}
+
+.overlay-left {
+  transform: translateY(-20%);
+}
+
+/* Move signin to right */
+.container.right-panel-active .sign-in-container {
+  transform: translateY(100%);
+}
+
+/* Move overlay to left */
+.container.right-panel-active .overlay-container {
+  transform: translateX(-100%);
+}
+
+/* Bring signup over signin */
+.container.right-panel-active .sign-up-container {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+}
+
+/* Move overlay back to right */
+.container.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+/* Bring back the text to center */
+.container.right-panel-active .overlay-left {
+  transform: translateY(0);
+}
+
+/* Same effect for right */
+.container.right-panel-active .overlay-right {
+  transform: translateY(20%);
+}
+
+
+
+
+.icons {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  letter-spacing: 15px;
+  align-items: center;
+}
+
+
+
+
+@media (max-width: 480px) {
+
+  .form-container form {
+    padding: 0 5px;
+
+  }
 }
